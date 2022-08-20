@@ -48,5 +48,6 @@ Exceeds Expectations:
             ☐ Change the background color for at least ONE of the mail sections of the site.
             ☐ Uses CSS transitions for focus states.
 Validate code:
+    ☐ Check for special characters like ' and &. Replace with ASCII code
     ☐ HTML passes
     ☐ CSS passes
