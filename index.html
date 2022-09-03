@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Code Review Newsletter signup form</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +14,7 @@
   </head>
 
   <body>
+    <button class="toggle-theme-button" id="toggleThemeBtn"></button>
     <header>
       <h1>Signup for our news letter</h1>
       <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -41,6 +44,7 @@
       <label for="city">City</label><br />
       <input type="text" id="city" name="city" /><br />
       <!-- Create a Dropdown -->
+      <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
       <label for="state">State</label><br />
       <select name="state" id="state">
         <option value="unknown">-</option>
