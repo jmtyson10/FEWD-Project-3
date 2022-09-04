@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Code Review Newsletter signup form</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -14,37 +13,46 @@
   </head>
 
   <body>
-    <h1>The Code Review</h1>
-    <button class="toggle-theme-button" id="toggleThemeBtn"></button>
+    <div class="title-bar">
+      <h1>The Code Review</h1>
+      <!-- Dark Mode Button -->
+      <!-- https://teamtreehouse.com/library/dark-mode-in-css -->
+      <a id="toggleThemeBtn">Dark Mode</a>
+    </div>
+
     <header>
-      <h2>Signup for our news letter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
+      <h2 class="header-title">Signup for our news letter</h2>
+      <p class="header-discription">
+        Get the latest news on how your code is doing right in your inbox
+      </p>
     </header>
 
     <form>
-      <h3>Contact Information</h3>
-      <section class="personal-information">
+      <h2 class="section-1">Contact Information</h2>
+      <fieldset class="personal-information">
         <label for="fullname">Full Name</label><br />
         <input
           type="text"
           id="fullname"
-          name="fullname"
+          name="user_fullname"
           required
           autofocus
+          placeholder="Required"
         /><br />
         <label for="emailaddress">Email Address</label><br />
         <input
           type="email"
           id="emailaddress"
-          name="emailaddress"
+          name="user_emailaddress"
           required
+          placeholder="Required"
         /><br />
         <label for="phone">Phone Number</label><br />
-        <input type="tel" id="phone" name="phone" /><br />
+        <input type="tel" id="phone" name="user_phone" required /><br />
         <label for="address">Street Address</label><br />
-        <input type="text" id="address" name="address" /><br />
+        <input type="text" id="address" name="user_address" /><br />
         <label for="city">City</label><br />
-        <input type="text" id="city" name="city" /><br />
+        <input type="text" id="city" name="user_city" /><br />
         <!-- Create a Dropdown -->
         <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
         <label for="state">State</label><br />
@@ -103,42 +111,47 @@
         ><br />
         <label for="zipcode">Zip Code</label><br />
         <input type="number" id="zipcode" name="zipcode" /><br />
-      </section>
+      </fieldset>
 
-      <section class="information-requested">
-        <h3>Newsletter</h3>
+      <fieldset class="information-requested">
+        <h2>Newsletter</h2>
         <p>Select the newsletters you would like to recieve</p>
-        <input type="checkbox" id="html-news" name="html_news"/>
+        <input type="checkbox" id="html-news" name="html_news" />
         <label for="html-news">HTML News</label><br />
-        <input type="checkbox" id="css-news" name="css_news"/>
+        <input type="checkbox" id="css-news" name="css_news" />
         <label for="css-news">CSS News</label><br />
-        <input type="checkbox" id="js-news" name="js_news"/>
+        <input type="checkbox" id="js-news" name="js_news" />
         <label for="js-news">JavaScript News</label><br />
-        </section>
+      </fieldset>
 
-      <section> 
- 
+      <fieldset>
         <p>Newsletter format</p>
 
-        <input type="radio" id="html-type"
-        name="type" value="html-type">
-        <label for="html-type">HTML</label><br>
+        <input type="radio" id="html-type" name="type" value="html-type" />
+        <label for="html-type">HTML</label><br />
 
-        <input type="radio" id="plain-text"
-        name="type" value="plain-text-type">
-        <label for="plain-text">Plain Text</label><br>
+        <input
+          type="radio"
+          id="plain-text"
+          name="type"
+          value="plain-text-type"
+        />
+        <label for="plain-text">Plain Text</label><br />
 
-
-        <label for="other"
-          >Other topics you<span>&#39;</span>d like to hear about</label
+        <label for="other">Other topics you&#39;d like to hear about</label
         ><br />
-        <textarea id="other">Anything else...?</textarea>
-      </section>
+        <textarea id="other" placeholder="Anything else...?"></textarea>
+      </fieldset>
 
-      <input type="submit" value="Sign Up">
-      
-      <footer>
-        <p class="copyright">&#169; 2022, SGIS Jordan Tyson&#58; Senior Developer</p>
-      </footer>
+      <input type="submit" value="Sign Up" />
+    </form>
+    <footer>
+      <p class="copyright">
+        &#169; 2022, SGIS Jordan Tyson&#58; Senior Developer
+      </p>
+    </footer>
+    <!-- Dark Mode JavaScript -->
+    <!-- https://teamtreehouse.com/library/javascript-basics/add-javascript-to-html -->
+    <script src="javascript/app.js"></script>
   </body>
 </html>

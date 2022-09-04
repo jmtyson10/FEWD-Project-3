@@ -1,4 +1,5 @@
 /* Global styling */
+
 * {
   box-sizing: border-box;
 }
@@ -8,14 +9,75 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Flex Box Stuff */
+
+body,
+.title-bar {
+  display: flex;
+}
+
+/* General Styling */
+
 body {
+  flex-direction: column;
   background-color: #eaebeb;
   color: #353d44;
+  width: 100vw;
+  margin: 0;
+  align-items: center;
 }
+
+.title-bar {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  color: aliceblue;
+  width: 100vw;
+}
+
+header {
+  width: 89vw;
+}
+.header-title,
+.header-discription {
+  text-align: center;
+}
+
+form {
+  border-top: 2px solid black;
+  width: 90vw;
+}
+
+.section-1 {
+  border-top: 1px solid gray;
+  margin-top: 2px;
+}
+
+.information-requested {
+  border-top: 2px solid gray;
+  margin-top: 10%;
+}
+
+fieldset {
+  border: none;
+}
+
+::placeholder {
+  color: red;
+}
+/* DarK Mode Stuff */
 
 body.dark {
   background-color: #353d44;
   color: #eaebeb;
 }
 
-/* Media Queries */
+/* label {
+  border: 2px solid red;
+} */
+
+a:hover {
+  color: red;
+}
+/* Media Queries */ ;
