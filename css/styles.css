@@ -73,11 +73,9 @@ body.dark {
   color: #eaebeb;
 }
 
-/* label {
-  border: 2px solid red;
-} */
-
-a:hover {
-  color: red;
+#toggleThemeBtn:hover {
+  color: purple;
+  font-size: 5em;
+  text-shadow: red 1px 0 10px;
 }
 /* Media Queries */ ;
