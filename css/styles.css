@@ -39,6 +39,7 @@ body {
 header {
   width: 89vw;
 }
+
 .header-title,
 .header-discription {
   text-align: center;
@@ -46,6 +47,10 @@ header {
 
 form {
   border-top: 2px solid black;
+}
+
+form,
+textarea {
   width: 90vw;
 }
 
@@ -64,8 +69,20 @@ fieldset {
 }
 
 ::placeholder {
-  color: red;
+  opacity: 75%;
+  text-align: right;
+  font-size: smaller;
 }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+}
+}
+
 /* DarK Mode Stuff */
 
 body.dark {

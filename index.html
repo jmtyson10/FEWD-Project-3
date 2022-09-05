@@ -5,6 +5,7 @@
     <!-- Added a favicon -->
     <!-- https://teamtreehouse.com/library/how-to-add-a-favicon-2/how-to-add-a-favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <title>The Code Review Newsletter signup form</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,7 +61,7 @@
         <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
         <label for="state">State</label><br />
         <select name="state" id="state">
-          <option value="unknown">-</option>
+          <option value="unknown">Choose State</option>
           <option value="alabama">Alabama</option>
           <option value="alaska">Alaska</option>
           <option value="arizona">Arazona</option>
@@ -143,10 +144,15 @@
 
         <label for="other">Other topics you&#39;d like to hear about</label
         ><br />
-        <textarea id="other" placeholder="Anything else...?"></textarea>
-      </fieldset>
+        <textarea
+          id="other"
+          name="other_interests"
+          placeholder="Anything else...?"
+        ></textarea
+        ><br />
 
-      <input type="submit" value="Sign Up" />
+        <input type="submit" id="submit" name="user_submit" value="Sign Up" />
+      </fieldset>
     </form>
     <footer>
       <p class="copyright">
