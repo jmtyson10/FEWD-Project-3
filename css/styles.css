@@ -20,7 +20,7 @@ body,
 
 body {
   flex-direction: column;
-  background-color: #eaebeb;
+  background-color: white;
   color: #353d44;
   width: 100vw;
   margin: 0;
@@ -36,10 +36,6 @@ body {
   width: 100vw;
 }
 
-header {
-  width: 89vw;
-}
-
 .header-title,
 .header-discription {
   text-align: center;
@@ -47,11 +43,6 @@ header {
 
 form {
   border-top: 2px solid black;
-}
-
-form,
-textarea {
-  width: 90vw;
 }
 
 .section-1 {
@@ -68,7 +59,8 @@ fieldset {
   border: none;
 }
 
-::placeholder {
+input[id="fullname"],
+input[id="emailaddress"] {
   opacity: 75%;
   text-align: right;
   font-size: smaller;
@@ -79,10 +71,67 @@ fieldset {
   padding: 0;
 }
 
-input {
-}
+form,
+textarea,
+input[id="fullname"],
+input[id="emailaddress"],
+input[id="phone"],
+input[id="address"],
+input[id="city"],
+input[id="submit"],
+select[id="state"] {
+  width: 90vw;
 }
 
+textarea,
+input[id="fullname"],
+input[id="emailaddress"],
+input[id="phone"],
+input[id="address"],
+input[id="city"],
+input[id="submit"],
+select[id="state"],
+input[id="zipcode"] {
+  background-color: #eaebeb;
+}
+
+textarea:focus,
+input[id="fullname"]:focus,
+input[id="emailaddress"]:focus,
+input[id="phone"]:focus,
+input[id="address"]:focus,
+input[id="city"]:focus,
+input[id="submit"]:focus,
+input[id="zipcode"]:focus {
+  outline-color: rgb(11, 11, 172);
+}
+
+textarea,
+input[id="fullname"],
+input[id="emailaddress"],
+input[id="phone"],
+input[id="address"],
+input[id="city"],
+input[id="submit"],
+select[id="state"],
+input[id="zipcode"] {
+  height: 3vh;
+  border: none;
+}
+
+input[id="zipcode"] {
+  width: 40vw;
+}
+
+input[id="submit"] {
+  background-color: rgb(96, 196, 198);
+  color: aliceblue;
+}
+
+p[class="copyright"] {
+  font-size: smaller;
+  font-style: italic;
+}
 /* DarK Mode Stuff */
 
 body.dark {
@@ -92,7 +141,7 @@ body.dark {
 
 #toggleThemeBtn:hover {
   color: purple;
-  font-size: 5em;
+  font-size: 3em;
   text-shadow: red 1px 0 10px;
 }
 /* Media Queries */ ;
