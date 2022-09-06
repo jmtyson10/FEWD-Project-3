@@ -25,7 +25,7 @@ Meets Expectations:
             ✔ the Full Name field @done(22-09-05 13:41)
             ✔ the Email address field @done(22-09-05 13:41)
     Mobile-first:
-        ☐ The HTML file include the viewport meta tag in the head of each document.
+        ✔ The HTML file include the viewport meta tag in the head of each document. @done(22-09-06 08:54)
         ☐ A mobile-first approach is utilized using min-width properties for media queries.
         ☐ Appropriate media query is placed to match the screen size for tables and desktop screens at 768px
     Design and styling:

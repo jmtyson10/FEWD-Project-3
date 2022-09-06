@@ -17,12 +17,12 @@
   </head>
 
   <body>
-    <div class="title-bar">
+    <section class="title-bar">
       <h1>The Code Review</h1>
       <!-- Dark Mode Button -->
       <!-- https://teamtreehouse.com/library/dark-mode-in-css -->
       <a id="toggleThemeBtn">Dark Mode</a>
-    </div>
+    </section>
 
     <header>
       <h2 class="header-title">Signup for our news letter</h2>
@@ -34,22 +34,28 @@
     <form>
       <h2 class="section-1">Contact Information</h2>
       <fieldset class="personal-information">
-        <label for="fullname">Full Name</label><br />
-        <input
-          type="text"
-          id="fullname"
-          name="user_fullname"
-          required
-          placeholder="Required"
-        /><br />
-        <label for="emailaddress">Email Address</label><br />
-        <input
-          type="email"
-          id="emailaddress"
-          name="user_emailaddress"
-          required
-          placeholder="Required"
-        /><br />
+        <div>
+          <label for="fullname">Full Name</label><br />
+          <input
+            type="text"
+            id="fullname"
+            name="user_fullname"
+            required
+            placeholder="Required"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="emailaddress">Email Address</label><br />
+          <input
+            type="email"
+            id="emailaddress"
+            name="user_emailaddress"
+            required
+            placeholder="Required"
+          />
+        </div>
+        <br />
         <label for="phone">Phone Number</label><br />
         <input type="tel" id="phone" name="user_phone" required /><br />
         <label for="address">Street Address</label><br />
