@@ -32,8 +32,8 @@
     </header>
 
     <form>
-      <h2 class="section-1">Contact Information</h2>
       <fieldset class="personal-information">
+        <legend class="section-1">Contact Information</legend>
         <div>
           <label for="fullname">Full Name</label><br />
           <input
@@ -44,7 +44,7 @@
             placeholder="Required"
           />
         </div>
-        <br />
+
         <div>
           <label for="emailaddress">Email Address</label><br />
           <input
@@ -55,75 +55,90 @@
             placeholder="Required"
           />
         </div>
-        <br />
-        <label for="phone">Phone Number</label><br />
-        <input type="tel" id="phone" name="user_phone" required /><br />
-        <label for="address">Street Address</label><br />
-        <input type="text" id="address" name="user_address" /><br />
-        <label for="city">City</label><br />
-        <input type="text" id="city" name="user_city" /><br />
-        <!-- Create a Dropdown -->
-        <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
-        <label for="state">State</label><br />
-        <select name="state" id="state">
-          <option value="unknown">Choose State</option>
-          <option value="alabama">Alabama</option>
-          <option value="alaska">Alaska</option>
-          <option value="arizona">Arazona</option>
-          <option value="arkansas">Arkansas</option>
-          <option value="california">California</option>
-          <option value="colorado">Colorado</option>
-          <option value="connecticut">Connecticut</option>
-          <option value="delaware">Delaware</option>
-          <option value="florida">Florida</option>
-          <option value="georiga">Georiga</option>
-          <option value="hawaii">Hawaii</option>
-          <option value="idaho">Idaho</option>
-          <option value="illinois">Illinois</option>
-          <option value="indiana">Indiana</option>
-          <option value="iowa">Iowa</option>
-          <option value="kansas">Kansas</option>
-          <option value="kentucky">Kentucky</option>
-          <option value="louisiana">Louisiana</option>
-          <option value="maine">Maine</option>
-          <option value="maryland">Maryland</option>
-          <option value="massachusetts">Massachusetts</option>
-          <option value="michign">Michigan</option>
-          <option value="minnesota">Minnesota</option>
-          <option value="mississippi">Mississippi</option>
-          <option value="misouri">Misouri</option>
-          <option value="montana">Montana</option>
-          <option value="nebraska">Nebraska</option>
-          <option value="nevada">Nevada</option>
-          <option value="new hampshire">New Hampshire</option>
-          <option value="new jersey">New Jersey</option>
-          <option value="new mexico">New Mexico</option>
-          <option value="new york">New York</option>
-          <option value="north carolina">North Carolina</option>
-          <option value="north dakota">North Dakota</option>
-          <option value="ohio">Ohio</option>
-          <option value="oklahoma">Oklahoma</option>
-          <option value="oregon">Oregon</option>
-          <option value="pennsylvania">Pennsylvania</option>
-          <option value="rhode island">Rhode Island</option>
-          <option value="south carolina">South Carolina</option>
-          <option value="south dakota">South Dakota</option>
-          <option value="tennessee">Tennessee</option>
-          <option value="texas">Texas</option>
-          <option value="utah">Utah</option>
-          <option value="vermont">Vermont</option>
-          <option value="virginia">Verginia</option>
-          <option value="washington">Washington</option>
-          <option value="west virginia">West Virginia</option>
-          <option value="wisconsin">Wisconsin</option>
-          <option value="wyoming">Wyoming</option></select
-        ><br />
-        <label for="zipcode">Zip Code</label><br />
-        <input type="number" id="zipcode" name="zipcode" /><br />
+
+        <div>
+          <label for="phone">Phone Number</label><br />
+          <input type="tel" id="phone" name="user_phone" required />
+        </div>
+
+        <div>
+          <label for="address">Street Address</label><br />
+          <input type="text" id="address" name="user_address" />
+        </div>
+
+        <div>
+          <label for="city">City</label><br />
+          <input type="text" id="city" name="user_city" />
+        </div>
+
+        <div>
+          <!-- Create a Dropdown -->
+          <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
+          <label for="state">State</label><br />
+          <select name="state" id="state">
+            <option value="unknown">Choose State</option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arazona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="florida">Florida</option>
+            <option value="georiga">Georiga</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+            <option value="illinois">Illinois</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="kansas">Kansas</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="maine">Maine</option>
+            <option value="maryland">Maryland</option>
+            <option value="massachusetts">Massachusetts</option>
+            <option value="michign">Michigan</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="mississippi">Mississippi</option>
+            <option value="misouri">Misouri</option>
+            <option value="montana">Montana</option>
+            <option value="nebraska">Nebraska</option>
+            <option value="nevada">Nevada</option>
+            <option value="new hampshire">New Hampshire</option>
+            <option value="new jersey">New Jersey</option>
+            <option value="new mexico">New Mexico</option>
+            <option value="new york">New York</option>
+            <option value="north carolina">North Carolina</option>
+            <option value="north dakota">North Dakota</option>
+            <option value="ohio">Ohio</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="oregon">Oregon</option>
+            <option value="pennsylvania">Pennsylvania</option>
+            <option value="rhode island">Rhode Island</option>
+            <option value="south carolina">South Carolina</option>
+            <option value="south dakota">South Dakota</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="texas">Texas</option>
+            <option value="utah">Utah</option>
+            <option value="vermont">Vermont</option>
+            <option value="virginia">Verginia</option>
+            <option value="washington">Washington</option>
+            <option value="west virginia">West Virginia</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="wyoming">Wyoming</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="zipcode">Zip Code</label><br />
+          <input type="number" id="zipcode" name="zipcode" />
+        </div>
       </fieldset>
 
       <fieldset class="information-requested">
-        <h2>Newsletter</h2>
+        <br />
+        <h2 class="section-2">Newsletter</h2>
         <p>Select the newsletters you would like to recieve</p>
         <input type="checkbox" id="html-news" name="html_news" />
         <label for="html-news">HTML News</label><br />
@@ -131,9 +146,7 @@
         <label for="css-news">CSS News</label><br />
         <input type="checkbox" id="js-news" name="js_news" />
         <label for="js-news">JavaScript News</label><br />
-      </fieldset>
 
-      <fieldset>
         <p>Newsletter format</p>
 
         <input type="radio" id="html-type" name="type" value="html-type" />

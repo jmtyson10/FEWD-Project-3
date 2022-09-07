@@ -45,7 +45,7 @@ form {
   border-top: 2px solid black;
 }
 
-.section-1 {
+.personal-information {
   border-top: 1px solid gray;
   margin: 2px 0 2px 0;
   padding: 1em 0 calc(1em + 1px) 0;
@@ -149,6 +149,7 @@ input[id="submit"] {
 p[class="copyright"] {
   font-size: smaller;
   font-style: italic;
+  opacity: 75%;
 }
 /* DarK Mode Stuff */
 
@@ -168,5 +169,21 @@ body.dark {
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  input[id="fullname"],
+  input[id="emailaddress"],
+  input[id="phone"],
+  input[id="address"],
+  input[id="city"],
+  select[id="state"],
+  input[id="zipcode"] {
+    width: 70vw;
   }
 }
