@@ -1,9 +1,9 @@
 Meets Expectations:
     Form Structure:
         ✔ Only one <form> tag is being used to contain all the form elements. @done(22-09-05 13:36)
-        ☐ Fieldsets and legends have been added for each of the following sections:
-            ☐ "Contact Information" section of the page
-            ☐ The "Newsletter" section of the page
+        ✔ Fieldsets and legends have been added for each of the following sections: @done(22-09-08 08:28)
+            ✔ "Contact Information" section of the page @done(22-09-08 08:28)
+            ✔ The "Newsletter" section of the page @done(22-09-08 08:28)
     Form fields and labels:
         ✔ Includes ALL of the required form fields: @done(22-09-05 13:42)
             ✔ Text input @done(22-09-05 13:37)
@@ -26,8 +26,8 @@ Meets Expectations:
             ✔ the Email address field @done(22-09-05 13:41)
     Mobile-first:
         ✔ The HTML file include the viewport meta tag in the head of each document. @done(22-09-06 08:54)
-        ☐ A mobile-first approach is utilized using min-width properties for media queries.
-        ☐ Appropriate media query is placed to match the screen size for tables and desktop screens at 768px
+        ✔ A mobile-first approach is utilized using min-width properties for media queries. @done(22-09-08 08:28)
+        ✔ Appropriate media query is placed to match the screen size for tables and desktop screens at 768px @done(22-09-08 08:29)
     Design and styling:
         ☐ Zip code width should be 50% width of the other input fields in mobile view and 25% in tablet view.
         ☐ Roughhly matches layout of the mobile and desktop mockups. General spacing and arrangement of the elements matches the design of the mockups for:desktop

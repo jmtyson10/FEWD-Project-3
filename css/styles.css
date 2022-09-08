@@ -12,14 +12,19 @@ body {
 /* Flex Box Stuff */
 
 body,
+fieldset[class="section-1"],
 .title-bar {
   display: flex;
 }
 
 /* General Styling */
+body,
+fieldset,
+.title-bar {
+  flex-direction: column;
+}
 
 body {
-  flex-direction: column;
   background-color: white;
   color: #353d44;
   width: 100vw;
@@ -28,7 +33,6 @@ body {
 }
 
 .title-bar {
-  flex-direction: column;
   align-items: center;
   margin: 0 auto;
   background-color: black;
@@ -45,15 +49,17 @@ form {
   border-top: 2px solid black;
 }
 
-.personal-information {
+legend[class="section-1"] {
   border-top: 1px solid gray;
-  margin: 2px 0 2px 0;
+  margin: 5px 0 2px 0;
   padding: 1em 0 calc(1em + 1px) 0;
+  width: 90vw;
 }
 
-.information-requested {
-  border-top: 2px solid gray;
-  margin-top: 10%;
+legend[class="section-2"] {
+  border-top: 1px solid gray;
+  width: 90vw;
+  padding-top: 1em;
 }
 
 fieldset {
@@ -67,9 +73,13 @@ input[id="emailaddress"] {
   font-size: smaller;
 }
 
+fieldset[class="information-requested"] {
+}
+
 fieldset {
-  margin: 0;
-  padding: 0;
+  margin-top: 3px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 form,
@@ -121,12 +131,15 @@ input[id="zipcode"] {
   margin: 1em 0 1em 0;
 }
 
-input[id="html-type"] {
+/* input[id="html-type"] {
   margin: 0 0 0.5em 0;
 }
 
 input[id="plain-text"] {
-  margin: 0.5em 0 2em 0;
+  margin: 1em 0 2em 0;
+} */
+input[type="radio"] {
+  margin: 1em 0 1em 0;
 }
 
 textarea {
@@ -151,6 +164,7 @@ p[class="copyright"] {
   font-style: italic;
   opacity: 75%;
 }
+
 /* DarK Mode Stuff */
 
 body.dark {
