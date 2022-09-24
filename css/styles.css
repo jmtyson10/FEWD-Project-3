@@ -56,10 +56,18 @@ legend[class="section-1"] {
   width: 90vw;
 }
 
+legend {
+  font-weight: bold;
+}
+
 legend[class="section-2"] {
   border-top: 1px solid gray;
   width: 90vw;
   padding-top: 1em;
+}
+
+p[id="for-section-2"] {
+  margin-top: 0.5em;
 }
 
 fieldset {
@@ -71,9 +79,6 @@ input[id="emailaddress"] {
   opacity: 75%;
   text-align: right;
   font-size: smaller;
-}
-
-fieldset[class="information-requested"] {
 }
 
 fieldset {
@@ -131,15 +136,16 @@ input[id="zipcode"] {
   margin: 1em 0 1em 0;
 }
 
-/* input[id="html-type"] {
-  margin: 0 0 0.5em 0;
+p[id="newsletter"] {
+  margin-bottom: 0;
+}
+
+input[id="html-type"] {
+  margin: 1em 0 1em 0;
 }
 
 input[id="plain-text"] {
-  margin: 1em 0 2em 0;
-} */
-input[type="radio"] {
-  margin: 1em 0 1em 0;
+  margin: 0.5em 0 2em 0;
 }
 
 textarea {
@@ -149,7 +155,7 @@ textarea {
 }
 
 input[id="zipcode"] {
-  width: 40vw;
+  width: 45vw;
 }
 
 input[id="submit"] {
