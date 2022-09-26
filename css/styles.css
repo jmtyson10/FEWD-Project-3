@@ -45,12 +45,21 @@ body {
   text-align: center;
 }
 
+.header-title {
+  margin-bottom: 0.5em;
+}
+
+.header-discription {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
 form {
-  border-top: 2px solid black;
+  border-top: 3px solid black;
 }
 
 legend[class="section-1"] {
-  border-top: 1px solid gray;
+  border-top: 2px solid gray;
   margin: 5px 0 2px 0;
   padding: 1em 0 calc(1em + 1px) 0;
   width: 90vw;
@@ -61,13 +70,14 @@ legend {
 }
 
 legend[class="section-2"] {
-  border-top: 1px solid gray;
+  border-top: 2px solid gray;
   width: 90vw;
   padding-top: 1em;
 }
 
 p[id="for-section-2"] {
   margin-top: 0.5em;
+  margin-bottom: 0;
 }
 
 fieldset {
@@ -171,6 +181,14 @@ p[class="copyright"] {
   opacity: 75%;
 }
 
+input[type="checkbox"] {
+  margin: 1em 0 1em 0;
+}
+
+fieldset {
+  margin-right: 0;
+  padding-right: 0;
+}
 /* DarK Mode Stuff */
 
 body.dark {
@@ -186,9 +204,13 @@ body.dark {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
+  body,
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  body {
   }
 
   div {
@@ -205,5 +227,32 @@ body.dark {
   select[id="state"],
   input[id="zipcode"] {
     width: 70vw;
+    height: 4em;
+    border-radius: 2.5px;
+  }
+
+  header {
+    margin-top: 2em;
+  }
+
+  legend {
+    font-size: 1.5em;
+  }
+
+  legend[class="section-1"] {
+    padding-top: 2.5em;
+  }
+
+  div {
+    align-items: center;
+  }
+
+  fieldset[class="personal-information"] {
+    padding-bottom: 3em;
+  }
+
+  legend[class="section-2"] {
+    padding-top: 3em;
+    padding-bottom: 0.25em;
   }
 }
