@@ -29,20 +29,20 @@ Meets Expectations:
         ✔ A mobile-first approach is utilized using min-width properties for media queries. @done(22-09-08 08:28)
         ✔ Appropriate media query is placed to match the screen size for tables and desktop screens at 768px @done(22-09-08 08:29)
     Design and styling:
-        ☐ Zip code width should be 50% width of the other input fields in mobile view
-        ☐ Zip code width should be 25% in tablet view
-        ☐ Roughhly matches layout of the mobile and desktop mockups. General spacing and arrangement of the elements matches the design of the mockups for:desktop
+        ✔ Zip code width should be 50% width of the other input fields in mobile view @done(22-10-01 22:25)
+        ✔ Zip code width should be 25% in tablet view @done(22-10-01 22:25)
+        ✔ Roughhly matches layout of the mobile and desktop mockups. General spacing and arrangement of the elements matches the design of the mockups for:desktop @done(22-10-01 22:25)
             ✔ mobil @done(22-09-24 15:04)
             ☐ desktop
-        ☐ The label text position matches the mockups
+        ✔ The label text position matches the mockups @done(22-10-01 22:25)
             ✔ above the form field for mobile @done(22-09-24 15:05)
-            ☐ to the left side of the form field for desktop
+            ✔ to the left side of the form field for desktop @done(22-10-01 22:25)
         ✔ project uses Flexbox for layout. @done(22-09-24 15:02)
         ✔ Uses a google font @done(22-09-24 15:02)
         ✔ Includes focus states for text fields, select menu, and the textarea field @started(22-09-24 15:02) @done(22-09-24 15:02) @lasted(21s)
 Exceeds Expectations:
     Placeholder text:
-        ☐ Placeholder text has been added to all text inputs and the textarea element
+        ✔ Placeholder text has been added to all text inputs and the textarea element @done(22-10-01 22:26)
         ☐ Uses the required attribute to add HTML5 Validation for required fields
     Design and styling:
         ☐ BOTH of the following additional styling enhancements have been added to the form
