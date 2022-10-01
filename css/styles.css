@@ -12,7 +12,6 @@ body {
 /* Flex Box Stuff */
 
 body,
-fieldset[class="section-1"],
 .title-bar {
   display: flex;
 }
@@ -61,7 +60,7 @@ form {
   border-top: 3px solid black;
 }
 
-legend[class="section-1"] {
+.section-1 {
   border-top: 2px solid gray;
   margin: 5px 0 2px 0;
   padding: 1em 0 calc(1em + 1px) 0;
@@ -72,12 +71,12 @@ legend {
   font-weight: bold;
 }
 
-legend[class="section-2"] {
+.section-2 {
   border-top: 2px solid gray;
   padding-top: 1em;
 }
 
-p[id="for-section-2"] {
+#for-section-2 {
   margin-top: 0.5em;
   margin-bottom: 0;
 }
@@ -86,8 +85,8 @@ fieldset {
   border: none;
 }
 
-input[id="fullname"],
-input[id="emailaddress"] {
+#fullname,
+#emailaddress {
   opacity: 75%;
   text-align: right;
   font-size: smaller;
@@ -104,39 +103,47 @@ fieldset {
 form,
 textarea,
 select,
-input[class="input-class"],
-legend[class="section-2"] {
+.input-class,
+.section-2,
+input[type="submit"] {
   width: 90vw;
+}
+
+input[type="submit"] {
+  font-size: large;
 }
 
 textarea,
 select,
-input[class="input-class"] {
+.input-class {
   background-color: #eaebeb;
 }
 
 select:focus,
 textarea:focus,
-input[class="input-class"]:focus {
+.input-class:focus {
   outline-color: rgb(11, 11, 172);
+  background-color: white;
+  transition: outline-color 1s ease-in;
+  transition: background-color 1s ease-in;
 }
 
 select,
-input[class="input-class"] {
+.input-class {
   height: 5vh;
   border: none;
   margin: 1em 0 1em 0;
 }
 
-p[id="newsletter"] {
+#newsletter {
   margin-bottom: 0;
 }
 
-input[id="html-type"] {
+#html-type {
   margin: 1em 0 1em 0;
 }
 
-input[id="plain-text"] {
+#plain-text {
   margin: 0.5em 0 2em 0;
 }
 
@@ -146,18 +153,18 @@ textarea {
   margin: 1em 0 1em 0;
 }
 
-input[id="zipcode"] {
+#zipcode {
   width: calc(90vw * 0.5);
 }
 
-input[id="submit"] {
+#submit {
   background-color: rgb(96, 196, 198);
   border-radius: 5px;
   color: aliceblue;
   height: 5vh;
 }
 
-p[class="copyright"] {
+.copyright {
   font-size: smaller;
   font-style: italic;
   opacity: 75%;
@@ -194,8 +201,12 @@ body.dark {
   }
 
   div {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+  }
+
+  .form-a {
+    flex-basis: 20%;
   }
 
   select,
@@ -213,20 +224,20 @@ body.dark {
     font-size: 1.5em;
   }
 
-  legend[class="section-1"] {
+  .section-1 {
     padding-top: 2.5em;
   }
 
-  fieldset[class="personal-information"] {
+  .personal-information {
     padding-bottom: 3em;
   }
 
-  legend[class="section-2"] {
+  .section-2 {
     padding-top: 3em;
     padding-bottom: 0.25em;
   }
 
-  input[id="zipcode"] {
+  #zipcode {
     width: calc(70vw * 0.25);
     padding: 0;
   }

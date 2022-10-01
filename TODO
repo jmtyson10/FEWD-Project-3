@@ -33,7 +33,7 @@ Meets Expectations:
         ✔ Zip code width should be 25% in tablet view @done(22-10-01 22:25)
         ✔ Roughhly matches layout of the mobile and desktop mockups. General spacing and arrangement of the elements matches the design of the mockups for:desktop @done(22-10-01 22:25)
             ✔ mobil @done(22-09-24 15:04)
-            ☐ desktop
+            ✔ desktop @done(22-10-02 00:28)
         ✔ The label text position matches the mockups @done(22-10-01 22:25)
             ✔ above the form field for mobile @done(22-09-24 15:05)
             ✔ to the left side of the form field for desktop @done(22-10-01 22:25)
@@ -43,15 +43,15 @@ Meets Expectations:
 Exceeds Expectations:
     Placeholder text:
         ✔ Placeholder text has been added to all text inputs and the textarea element @done(22-10-01 22:26)
-        ☐ Uses the required attribute to add HTML5 Validation for required fields
+        ✔ Uses the required attribute to add HTML5 Validation for required fields @done(22-10-02 01:02)
     Design and styling:
-        ☐ BOTH of the following additional styling enhancements have been added to the form
-            ☐ Change the background color for at least ONE of the mail sections of the site.
-            ☐ Uses CSS transitions for focus states.
+        ✔ BOTH of the following additional styling enhancements have been added to the form @done(22-10-02 01:01)
+            ✔ Change the background color for at least ONE of the mail sections of the site. @done(22-10-02 00:30)
+            ✔ Uses CSS transitions for focus states. @done(22-10-02 01:01)
 Validate code:
-    ☐ Check for special characters like ' and &. Replace with ASCII code
-    ☐ DRY off your CSS
-    ☐ HTML passes
-    ☐ CSS passes
+    ✔ Check for special characters like ' and &. Replace with ASCII code @done(22-10-02 01:02)
+    ✔ DRY off your CSS @done(22-10-02 01:03)
+    ✔ HTML passes @done(22-10-02 01:06)
+    ✔ CSS passes @done(22-10-02 01:08)
     ☐ Get it reviewed
     ☐ Submit
