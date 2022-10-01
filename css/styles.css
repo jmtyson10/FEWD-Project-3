@@ -95,6 +95,8 @@ fieldset {
   margin-top: 3px;
   margin-left: 0;
   padding-left: 0;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 form,
@@ -185,10 +187,6 @@ input[type="checkbox"] {
   margin: 1em 0 1em 0;
 }
 
-fieldset {
-  margin-right: 0;
-  padding-right: 0;
-}
 /* DarK Mode Stuff */
 
 body.dark {
@@ -208,9 +206,6 @@ body.dark {
   form {
     display: flex;
     flex-direction: column;
-  }
-
-  body {
   }
 
   div {
