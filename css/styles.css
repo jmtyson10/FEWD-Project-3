@@ -241,4 +241,8 @@ body.dark {
     width: calc(70vw * 0.25);
     padding: 0;
   }
+
+  .the-form {
+    max-width: 75vw;
+  }
 }

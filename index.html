@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Added a favicon -->
     <!-- https://teamtreehouse.com/library/how-to-add-a-favicon-2/how-to-add-a-favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -31,166 +33,169 @@
       </p>
     </header>
 
-    <form>
-      <fieldset class="personal-information">
-        <legend class="section-1">Contact Information</legend>
-        <div>
-          <label class="form-a" for="fullname">Full Name</label><br />
+    <div class="the-form">
+      <form>
+        <fieldset class="personal-information">
+          <legend class="section-1">Contact Information</legend>
+          <div>
+            <label class="form-a" for="fullname">Full Name</label><br />
+            <input
+              class="input-class"
+              type="text"
+              id="fullname"
+              name="user_fullname"
+              required
+              placeholder="Required"
+            />
+          </div>
+
+          <div>
+            <label class="form-a" for="emailaddress">Email Address</label><br />
+            <input
+              class="input-class"
+              type="email"
+              id="emailaddress"
+              name="user_emailaddress"
+              required
+              placeholder="Required"
+            />
+          </div>
+
+          <div>
+            <label class="form-a" for="phone">Phone Number</label><br />
+            <input
+              class="input-class"
+              type="tel"
+              id="phone"
+              name="user_phone"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="form-a" for="address">Street Address</label><br />
+            <input
+              class="input-class"
+              type="text"
+              id="address"
+              name="user_address"
+            />
+          </div>
+
+          <div>
+            <label class="form-a" for="city">City</label><br />
+            <input class="input-class" type="text" id="city" name="user_city" />
+          </div>
+
+          <div>
+            <!-- Create a Dropdown -->
+            <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
+            <label class="form-a" for="state">State</label><br />
+            <select name="state" id="state">
+              <option value="">Choose State</option>
+              <option value="alabama">Alabama</option>
+              <option value="alaska">Alaska</option>
+              <option value="arizona">Arazona</option>
+              <option value="arkansas">Arkansas</option>
+              <option value="california">California</option>
+              <option value="colorado">Colorado</option>
+              <option value="connecticut">Connecticut</option>
+              <option value="delaware">Delaware</option>
+              <option value="florida">Florida</option>
+              <option value="georiga">Georiga</option>
+              <option value="hawaii">Hawaii</option>
+              <option value="idaho">Idaho</option>
+              <option value="illinois">Illinois</option>
+              <option value="indiana">Indiana</option>
+              <option value="iowa">Iowa</option>
+              <option value="kansas">Kansas</option>
+              <option value="kentucky">Kentucky</option>
+              <option value="louisiana">Louisiana</option>
+              <option value="maine">Maine</option>
+              <option value="maryland">Maryland</option>
+              <option value="massachusetts">Massachusetts</option>
+              <option value="michign">Michigan</option>
+              <option value="minnesota">Minnesota</option>
+              <option value="mississippi">Mississippi</option>
+              <option value="misouri">Misouri</option>
+              <option value="montana">Montana</option>
+              <option value="nebraska">Nebraska</option>
+              <option value="nevada">Nevada</option>
+              <option value="new hampshire">New Hampshire</option>
+              <option value="new jersey">New Jersey</option>
+              <option value="new mexico">New Mexico</option>
+              <option value="new york">New York</option>
+              <option value="north carolina">North Carolina</option>
+              <option value="north dakota">North Dakota</option>
+              <option value="ohio">Ohio</option>
+              <option value="oklahoma">Oklahoma</option>
+              <option value="oregon">Oregon</option>
+              <option value="pennsylvania">Pennsylvania</option>
+              <option value="rhode island">Rhode Island</option>
+              <option value="south carolina">South Carolina</option>
+              <option value="south dakota">South Dakota</option>
+              <option value="tennessee">Tennessee</option>
+              <option value="texas">Texas</option>
+              <option value="utah">Utah</option>
+              <option value="vermont">Vermont</option>
+              <option value="virginia">Verginia</option>
+              <option value="washington">Washington</option>
+              <option value="west virginia">West Virginia</option>
+              <option value="wisconsin">Wisconsin</option>
+              <option value="wyoming">Wyoming</option>
+            </select>
+          </div>
+
+          <div class="zip">
+            <label class="form-a" for="zipcode">Zip Code</label><br />
+            <input
+              class="input-class"
+              type="text"
+              id="zipcode"
+              name="zipcode"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="information-requested">
+          <legend class="section-2">Newsletter</legend>
+          <p id="for-section-2">
+            Select the newsletters you would like to recieve
+          </p>
+          <input type="checkbox" id="html-news" name="html_news" />
+          <label for="html-news">HTML News</label><br />
+          <input type="checkbox" id="css-news" name="css_news" />
+          <label for="css-news">CSS News</label><br />
+          <input type="checkbox" id="js-news" name="js_news" />
+          <label for="js-news">JavaScript News</label><br />
+
+          <p id="newsletter">Newsletter format</p>
+
+          <input type="radio" id="html-type" name="type" value="html-type" />
+          <label for="html-type">HTML</label><br />
+
           <input
-            class="input-class"
-            type="text"
-            id="fullname"
-            name="user_fullname"
-            required
-            placeholder="Required"
+            type="radio"
+            id="plain-text"
+            name="type"
+            value="plain-text-type"
           />
-        </div>
+          <label for="plain-text">Plain Text</label><br />
 
-        <div>
-          <label class="form-a" for="emailaddress">Email Address</label><br />
-          <input
-            class="input-class"
-            type="email"
-            id="emailaddress"
-            name="user_emailaddress"
-            required
-            placeholder="Required"
-          />
-        </div>
+          <label for="other">Other topics you&#39;d like to hear about</label
+          ><br />
+          <textarea
+            id="other"
+            name="other_interests"
+            placeholder="Anything else...?"
+          ></textarea
+          ><br />
 
-        <div>
-          <label class="form-a" for="phone">Phone Number</label><br />
-          <input
-            class="input-class"
-            type="tel"
-            id="phone"
-            name="user_phone"
-            required
-          />
-        </div>
+          <input type="submit" id="submit" name="user_submit" value="Sign Up" />
+        </fieldset>
+      </form>
+    </div>
 
-        <div>
-          <label class="form-a" for="address">Street Address</label><br />
-          <input
-            class="input-class"
-            type="text"
-            id="address"
-            name="user_address"
-          />
-        </div>
-
-        <div>
-          <label class="form-a" for="city">City</label><br />
-          <input class="input-class" type="text" id="city" name="user_city" />
-        </div>
-
-        <div>
-          <!-- Create a Dropdown -->
-          <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
-          <label class="form-a" for="state">State</label><br />
-          <select name="state" id="state">
-            <option value="">Choose State</option>
-            <option value="alabama">Alabama</option>
-            <option value="alaska">Alaska</option>
-            <option value="arizona">Arazona</option>
-            <option value="arkansas">Arkansas</option>
-            <option value="california">California</option>
-            <option value="colorado">Colorado</option>
-            <option value="connecticut">Connecticut</option>
-            <option value="delaware">Delaware</option>
-            <option value="florida">Florida</option>
-            <option value="georiga">Georiga</option>
-            <option value="hawaii">Hawaii</option>
-            <option value="idaho">Idaho</option>
-            <option value="illinois">Illinois</option>
-            <option value="indiana">Indiana</option>
-            <option value="iowa">Iowa</option>
-            <option value="kansas">Kansas</option>
-            <option value="kentucky">Kentucky</option>
-            <option value="louisiana">Louisiana</option>
-            <option value="maine">Maine</option>
-            <option value="maryland">Maryland</option>
-            <option value="massachusetts">Massachusetts</option>
-            <option value="michign">Michigan</option>
-            <option value="minnesota">Minnesota</option>
-            <option value="mississippi">Mississippi</option>
-            <option value="misouri">Misouri</option>
-            <option value="montana">Montana</option>
-            <option value="nebraska">Nebraska</option>
-            <option value="nevada">Nevada</option>
-            <option value="new hampshire">New Hampshire</option>
-            <option value="new jersey">New Jersey</option>
-            <option value="new mexico">New Mexico</option>
-            <option value="new york">New York</option>
-            <option value="north carolina">North Carolina</option>
-            <option value="north dakota">North Dakota</option>
-            <option value="ohio">Ohio</option>
-            <option value="oklahoma">Oklahoma</option>
-            <option value="oregon">Oregon</option>
-            <option value="pennsylvania">Pennsylvania</option>
-            <option value="rhode island">Rhode Island</option>
-            <option value="south carolina">South Carolina</option>
-            <option value="south dakota">South Dakota</option>
-            <option value="tennessee">Tennessee</option>
-            <option value="texas">Texas</option>
-            <option value="utah">Utah</option>
-            <option value="vermont">Vermont</option>
-            <option value="virginia">Verginia</option>
-            <option value="washington">Washington</option>
-            <option value="west virginia">West Virginia</option>
-            <option value="wisconsin">Wisconsin</option>
-            <option value="wyoming">Wyoming</option>
-          </select>
-        </div>
-
-        <div class="zip">
-          <label class="form-a" for="zipcode">Zip Code</label><br />
-          <input
-            class="input-class"
-            type="number"
-            id="zipcode"
-            name="zipcode"
-          />
-        </div>
-      </fieldset>
-
-      <fieldset class="information-requested">
-        <legend class="section-2">Newsletter</legend>
-        <p id="for-section-2">
-          Select the newsletters you would like to recieve
-        </p>
-        <input type="checkbox" id="html-news" name="html_news" />
-        <label for="html-news">HTML News</label><br />
-        <input type="checkbox" id="css-news" name="css_news" />
-        <label for="css-news">CSS News</label><br />
-        <input type="checkbox" id="js-news" name="js_news" />
-        <label for="js-news">JavaScript News</label><br />
-
-        <p id="newsletter">Newsletter format</p>
-
-        <input type="radio" id="html-type" name="type" value="html-type" />
-        <label for="html-type">HTML</label><br />
-
-        <input
-          type="radio"
-          id="plain-text"
-          name="type"
-          value="plain-text-type"
-        />
-        <label for="plain-text">Plain Text</label><br />
-
-        <label for="other">Other topics you&#39;d like to hear about</label
-        ><br />
-        <textarea
-          id="other"
-          name="other_interests"
-          placeholder="Anything else...?"
-        ></textarea
-        ><br />
-
-        <input type="submit" id="submit" name="user_submit" value="Sign Up" />
-      </fieldset>
-    </form>
     <footer>
       <p class="copyright">
         &#169; 2022, SGIS Jordan Tyson&#58; Senior Astronaut
