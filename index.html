@@ -38,59 +38,66 @@
         <fieldset class="personal-information">
           <legend class="section-1">Contact Information</legend>
           <div>
-            <label class="form-a" for="fullname">Full Name</label><br />
+            <label class="form-a" for="fullname">Full Name</label>
             <input
               class="input-class"
               type="text"
               id="fullname"
               name="user_fullname"
               required
-              placeholder="Required"
+              placeholder="Required "
             />
           </div>
 
           <div>
-            <label class="form-a" for="emailaddress">Email Address</label><br />
+            <label class="form-a" for="emailaddress">Email Address</label>
             <input
               class="input-class"
               type="email"
               id="emailaddress"
               name="user_emailaddress"
               required
-              placeholder="Required"
+              placeholder="Required "
             />
           </div>
 
           <div>
-            <label class="form-a" for="phone">Phone Number</label><br />
+            <label class="form-a" for="phone">Phone Number</label>
             <input
               class="input-class"
               type="tel"
               id="phone"
               name="user_phone"
-              required
+              placeholder="Optional "
             />
           </div>
 
           <div>
-            <label class="form-a" for="address">Street Address</label><br />
+            <label class="form-a" for="address">Street Address</label>
             <input
               class="input-class"
               type="text"
               id="address"
               name="user_address"
+              placeholder="Optional "
             />
           </div>
 
           <div>
-            <label class="form-a" for="city">City</label><br />
-            <input class="input-class" type="text" id="city" name="user_city" />
+            <label class="form-a" for="city">City</label>
+            <input
+              class="input-class"
+              type="text"
+              id="city"
+              name="user_city"
+              placeholder="Optional "
+            />
           </div>
 
           <div>
             <!-- Create a Dropdown -->
             <!-- Reference: https://www.w3schools.com/tags/tag_select.asp -->
-            <label class="form-a" for="state">State</label><br />
+            <label class="form-a" for="state">State</label>
             <select name="state" id="state">
               <option value="">Choose State</option>
               <option value="alabama">Alabama</option>
@@ -147,12 +154,13 @@
           </div>
 
           <div class="zip">
-            <label class="form-a" for="zipcode">Zip Code</label><br />
+            <label class="form-a" for="zipcode">Zip Code</label>
             <input
               class="input-class"
               type="text"
               id="zipcode"
               name="zipcode"
+              placeholder="Optional "
             />
           </div>
         </fieldset>
@@ -167,7 +175,7 @@
           <input type="checkbox" id="css-news" name="css_news" />
           <label for="css-news">CSS News</label><br />
           <input type="checkbox" id="js-news" name="js_news" />
-          <label for="js-news">JavaScript News</label><br />
+          <label for="js-news">JavaScript News</label>
 
           <p id="newsletter">Newsletter format</p>
 
@@ -182,14 +190,12 @@
           />
           <label for="plain-text">Plain Text</label><br />
 
-          <label for="other">Other topics you&#39;d like to hear about</label
-          ><br />
+          <label for="other">Other topics you&#39;d like to hear about</label>
           <textarea
             id="other"
             name="other_interests"
             placeholder="Anything else...?"
-          ></textarea
-          ><br />
+          ></textarea>
 
           <input type="submit" id="submit" name="user_submit" value="Sign Up" />
         </fieldset>
